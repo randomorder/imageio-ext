@@ -35,7 +35,11 @@
      <copy file="target/release/imageio-ext-${version}-javadoc.zip" toFile="deploy/imageio-ext-${version}-javadocs.zip" />
      
      <!-- transfer to Remote-->
-     <scp todir="${user}:${password}@${host}:${remoteReleasesPath}/${version}" verbose="true">
+     <scp todir="${user}@${host}:${remoteReleasesPath}/${version}"
+        port="${port}"
+        keyfile="{keyfile}"
+        trust="false"
+        verbose="false">
        <fileset dir="deploy">
          <include name="*"/>
        </fileset>
