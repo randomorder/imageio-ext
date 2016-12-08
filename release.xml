@@ -39,7 +39,7 @@
      <!-- transfer to Remote-->
      <scp todir="${user}@${host}:${remoteReleasesPath}/${version}"
         port="${port}"
-        keyfile="{keyfile}"
+        keyfile="${keyfile}"
         trust="false"
         verbose="false">
        <fileset dir="deploy">
