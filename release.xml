@@ -40,7 +40,7 @@
      <scp todir="${user}@${host}:${remoteReleasesPath}/${version}"
         port="${port}"
         keyfile="${keyfile}"
-        trust="false"
+        trust="true"
         verbose="false">
        <fileset dir="deploy">
          <include name="*"/>
