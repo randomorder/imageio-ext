@@ -7,6 +7,8 @@
     <property name="remoteReleasesPath" value="fakepath" />
     <property name="user" value="fakeuser" />
     <property name="password" value="fakepassword" />
+    <property name="keyfile" value="/home/user/.ssh/id_rsa" />
+    <property name="port" value="22" />
     
     <!-- Prepare deployment folder -->
     <delete includeEmptyDirs="true" dir="deploy" />
